@@ -1,6 +1,6 @@
 # Markdown Flashcard Generator
 
-Markdown Flashcard Generator is a simple program that recursively searches a given notes directory, searching for a table of Terms and Definitions. This program assembles the terms and definitions from each file into one file, allowing you to mass import your terms and definitions into flashcard programs like Quizlet.
+Markdown Flashcard Generator is a simple program that recursively searches a given notes directory, searching for a table of Terms and Definitions. This program assembles the terms and definitions from multiple files in one directory and its subdirectory, allowing you to mass import your terms and definitions into flashcard programs like Quizlet.
 
 
 ## Requirements
