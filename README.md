@@ -13,7 +13,7 @@ Term | Definition
 Your term here | Your definition here
 ```
 
-The program assumes three things in order to work:
+The program assumes two things in order to work:
 - You only have one Term/Definition Table per file
 - Your Term/Definition Table top row reads `Term | Definition` (case-sensitive)
 
