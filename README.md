@@ -24,7 +24,7 @@ The divider row can be any size you want, just make sure it exists.
 The program has 3 configuration variables located at the top of the main function
 
 ```
-let path = "."; 							// Path to a folder of plaintext notes
-let extension = ".md"; 						// File extension of your notes
-let outputFile = `${path}/Flashcards.txt`; 	// Output file for all terms/definitions
+let path = "."; // Path to a folder of plaintext notes
+let extension = ".md";  // File extension of your notes
+let outputFile = `${path}/Flashcards.txt`;  // Output file for all terms/definitions
 ```
