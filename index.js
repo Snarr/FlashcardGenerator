@@ -1,10 +1,14 @@
 let fs = require('fs');
 
 async function main() {
-  let path = ".";
-  let markdownNotes = await recursiveSearchForFiles(path, ".md");
+  // CONFIGURATION
+  let folderPath = ".";                             // Path to a folder of plaintext notes
+  let extension = ".md";                            // File extension of your notes
+  let outputFile = `${folderPath}/Flashcards.txt`;  // Output file for all terms/definitions
+
+  let markdownNotes = await recursiveSearchForFiles(folderPath, extension);
   let definitions = await findTermsAndDefinitions(markdownNotes);
-  await saveToFile(`${path}/Flashcards.txt`, definitions.join('\n'));
+  await saveToFile(outputFile, definitions.join('\n'));
 }
 
 main();
@@ -53,6 +57,7 @@ async function findTermsAndDefinitions(files) {
   }
   return definitions;
 }
+
 function searchForDefinitionStartIndex(splitBody) {
   for (let i = 0; i < splitBody.length; i++) {
     let str = splitBody[i];
